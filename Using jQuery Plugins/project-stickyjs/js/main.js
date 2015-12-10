@@ -6,7 +6,10 @@ $(".animsition").animsition({
   outDuration: 500
 });
 
-$('.header').sticky();
+$('.header').sticky({
+  getWidthFrom: '.container',
+  responsiveWidth: true
+});
 
 $('.header').on('sticky-start', function () {
   $('.description').html('We build <strong>great</strong> apps');
@@ -17,7 +20,9 @@ $('.header').on('sticky-end', function () {
 });
 
 $('h5').sticky({
-  topSpacing: 64
+  topSpacing: 64,
+  getWidthFrom: '.container',
+  responsiveWidth: true
 });
 
 $('h5').on('sticky-start', function () {
