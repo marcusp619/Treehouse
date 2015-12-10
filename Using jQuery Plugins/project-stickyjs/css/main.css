@@ -346,3 +346,7 @@ footer {
 .is-sticky .header {
   background-color: black;
 }
+
+.is-sticky h5 {
+  opacity: 100;
+}
