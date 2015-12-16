@@ -9,28 +9,48 @@ var completedTasksHolder = document.getElementById("completed-tasks"); //complet
 // New Task List Item
 var createNewTaskElement = function (taskString) {
   //create list item
-  var listItem;
+  var listItem = document.createElement("li");
+
+  //input (checkbox)
+  var checkBox = document.createElement("input"); //checkBox
+
   //label
+  var label = document.createElement("label"); //input text
+
   //input (text)
+  var editInput = document.createElement("input"); //text
+
   //button.edit
-  //button.Delete
-  //Each elements, needs modified and appended
+  var editButton = document.createElement("button");
+
+  //button.delete
+  var deleteButton = document.createElement("button");
+
+  //Each element needs modifying
+
+  //Each element needs appending
+  listItem.appendChild(checkBox);
+  listItem.appendChild(label);
+  listItem.appendChild(editInput);
+  listItem.appendChild(editButton);
+  listItem.appendChild(deleteButton);
+
   return listItem;
 };
 
 // Add a new task
 var addTask = function () {
-  console.log("Add task...");
+  console.log("Adding task...");
   //Create new list item with the text from #new-task:
   var listItem = createNewTaskElement("Some New Task");
 
-  //Appen listItem to incompleteTasksHolder
-
+  //Append listItem to incompleteTasksHolder
+  incompleteTasksHolder.appendChild(listItem);
 };
 
 // Edit an existing task
 var editTask = function () {
-  console.log("Edit task...");
+  console.log("Editing task...");
   //When button is pressed...
     //if class of the parent is .editMode
       //Switch  from .editMode
@@ -44,7 +64,7 @@ var editTask = function () {
 
 // Delete existing task
 var deleteTask = function () {
-  console.log("Delete task...");
+  console.log("Deleting task...");
   //When the Delete button is pressed...
     //Remove the parnt list item from the ul
 };
