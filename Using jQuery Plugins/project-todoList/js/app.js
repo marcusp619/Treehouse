@@ -4,17 +4,28 @@
 var taskInput = document.getElementById("new-task"); //new-task
 var addButton = document.getElementsByTagName("button")[0]; //first button
 var incompleteTasksHolder = document.getElementById("incomplete-tasks"); //incomplete-tasks
-var completedTasksHolder = document.getElementById("completed-tasks");  //completed-tasks
+var completedTasksHolder = document.getElementById("completed-tasks"); //completed-tasks
+
+// New Task List Item
+var createNewTaskElement = function (taskString) {
+  //create list item
+  var listItem;
+  //label
+  //input (text)
+  //button.edit
+  //button.Delete
+  //Each elements, needs modified and appended
+  return listItem;
+};
+
 // Add a new task
 var addTask = function () {
   console.log("Add task...");
-  //When button is pressed...
   //Create new list item with the text from #new-task:
-    //label
-    //input (text)
-    //button.edit
-    //button.Delete
-    //Each elements, needs modified and appended
+  var listItem = createNewTaskElement("Some New Task");
+
+  //Appen listItem to incompleteTasksHolder
+
 };
 
 // Edit an existing task
