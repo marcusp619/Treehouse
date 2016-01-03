@@ -1,6 +1,10 @@
 //Problem: User ineraction dosn't provide desired results.
 //Solution: Add interactivty so the user can manage daily tasks
 
+var taskInput = document.getElementById('new-task'); //new-task
+var addButton = document.getElementsByTagName('button')[0]; //first button
+var incompleteTasksHolder = document.getElementById('incomplete-tasks'); //incomplete-tasks
+var completedTasksHolder = document.getElementById('completed-tasks'); //completed-tasks
 // Add a new task
 var addTask = function () {
   // When the button is pressed
@@ -41,5 +45,5 @@ var taskCompleted = function () {
 // Mark a task as incomplete
 var taskIncomplete = function () {
   //when the checkbox is unchecked
-    //Append the task list item to the #incomplete-tasks  
+    //Append the task list item to the #incomplete-tasks
 };
